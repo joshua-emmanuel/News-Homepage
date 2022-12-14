@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="nav-bg"></div>
+    <div class="wrapper">
+      <nav>
+        <div class="container">
+          <!-- <a href="#main">Go To Main</a> -->
+          <nav>
+            <a class="ring-link logomark"  href="#" aria-label="Go To Homepage">
+              <img src="assets/images/logo.svg" alt="">
+            </a>
+            <button class="btn-nav ring-link" id="mobileNavBtn" aria-label="Open Nav" aria-expanded="false" aria-controls="mobileNav">
+              <img src="assets/images/icon-menu.svg" style="pointer-events: none;" alt="">
+            </button>
+            <ul role="list" id="mobileNav" class="nav-links">
+              
+              <li>
+                <a href="#" tabindex="-1" class="nav-link ring-link">Home</a>
+              </li>
+              <li>
+                <a href="#" tabindex="-1" class="nav-link ring-link">New</a>
+              </li>
+              <li>
+                <a href="#" tabindex="-1" class="nav-link ring-link">Popular</a>
+              </li>
+              <li>
+                <a href="#" tabindex="-1" class="nav-link ring-link">Trending</a>
+              </li>
+              <li>
+                <a href="#" tabindex="-1" class="nav-link ring-link">Categories</a>
+              </li>
+              <button id="closeNavBtn" tabindex="-1" class="ring-link close-btn" aria-label="Close Mobile Nav">
+                <img src="assets/images/icon-menu-close.svg" style="pointer-events: none;" alt="">
+              </button>
+            </ul>
+          </nav>
+        </div>
+      </nav>
+
+      <!-- Main -->
+      <main id="main">
+        <div class="container">
+          <div class="grid-wrapper">
+            <header class="stack-lg">
+              <picture>
+                <source media="(max-width: 768px)"
+                  srcset="assets/images/image-web-3-mobile.jpg">
+                <source media="(min-width: 768px)"
+                  srcset="assets/images/image-web-3-desktop.jpg">
+                <img src="assets/images/image-web-3-mobile.jpg" alt="Web3 Image">
+              </picture>
+              <div class="flex-wrapper">
+                <h1>The Bright Future of Web 3.0?</h1>
+                <div class="stack-md">
+                  <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the
+                  people.But is it really fulfilling its promise?</p>
+                  <a class="btn" href="#">Read More</a>
+                </div>
+              </div>
+            </header>
+
+            <aside aria-labelledby="new">
+              <div class="stack-lg">
+                <h2 id="new">New</h2>
+                <div class="stack-sm">
+                  <ul role="list" class="stack-xl">
+                    <li class="new-article stack-xs">
+                      <h3><a href="" class="ring-link new-article--link ring-link--alt">Hydrogen VS Electric Cars</a></h3>
+                      <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                    </li>
+                    <li class="new-article stack-xs">
+                      <h3><a href="" class="ring-link new-article--link ring-link--alt">The Downsides of AI Artistry</a></h3>
+                      <p>What are the possible adverse effects of on-demand AI image generation?</p>
+                    </li>
+                    <li class="new-article stack-xs">
+                      <h3><a href="" class="ring-link new-article--link ring-link--alt">Is VC Funding Drying Up?</a></h3>
+                      <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+
+          <section aria-labelledby="articles">
+            <h2 id="articles" class="sr-only">Top Posts</h2>
+            <div class="article-wrapper">
+              <article class="article first-article">
+                <img class="article-image" src="assets/images/image-retro-pcs.jpg" alt="Retro PCs">
+                <div class="stack-xs">
+                  <p class="article-number">01</p>
+                  <h3><a href="" class="ring-link p-0 text-dark">Reviving Retro PCs</a></h3>
+                  <p>What happens when old PCs are given modern upgrades?</p>
+                </div>
+              </article>
+              <article class="article second-article">
+                <img class="article-image" src="assets/images/image-top-laptops.jpg" alt="Top Laptops">
+                <div class="stack-xs">
+                  <p class="article-number">02</p>
+                  <h3><a href="" class="ring-link p-0 text-dark">Top 10 Laptops of 2022</a></h3>
+                  <p>Our best picks for various needs and budgets.</p>
+                </div>
+              </article>
+              <article class="article third-article">
+                <img class="article-image" src="assets/images/image-gaming-growth.jpg" alt="Gaming Growth">
+                <div class="stack-xs">
+                  <p class="article-number">03</p>
+                  <h3><a href="" class="ring-link p-0 text-dark">The Growth of Gaming</a></h3>
+                  <p>How the pandemic has sparked fresh opportunities.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer>
+
+      </footer>
+    </div>
+  </body>
+
+  <script src="main.js"></script>
+</html>
